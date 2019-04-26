@@ -1,0 +1,127 @@
+#content #box {
+    /* width: 1280px;
+    height: 480px; */
+    border-bottom: 1px dashed #e8dfda;
+    padding: 0 0 30px;
+    position: relative;
+   
+}
+#box #title-index{
+    height: 50px;
+    margin: 30px 0;
+    position: relative;
+    clear: both;
+}
+#title-index span {
+    display: block;
+    float: left;
+    width: 10px;
+    height: 57px;
+    overflow: hidden;
+    position: relative;
+    margin-left: -10px;
+    background: url(../img/title-left-right-1.png) no-repeat left top;
+}
+#title-index h3 {
+    background: url(../img/menu-bg-1.jpg) repeat-x;
+}
+#title-index a{
+    color: #dad9d4;
+    text-decoration: none;
+}
+#title-index h3 {
+    width: 290px;
+    height: 50px;
+    font-size: 18px;
+    line-height: 50px;
+    padding-left: 30px;
+    position: relative;
+    display: inline-block;
+}
+#box #wrap {
+    height: 100%;
+    overflow: hidden;
+    padding: 0 25px 0 30px;
+    overflow: hidden;
+}
+#box #wrap .carousel{
+     width: 1200px;
+    height: 400px;
+    margin: 50px auto;
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    perspective:1000px;
+}
+.carousel .imgList ul li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+.carousel .imgList ul li.active {
+    display: block;
+}
+ .carousel ul li img {
+    width: 1200px;
+    height: 400px;
+}
+.btns a {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -moz-background-color:#000;
+    -ms-background-color:#000;
+    -o-background-color:#000;
+    background-color:#000;
+    background-color:#000;
+    opacity:0.42;
+    border-radius: 10px;
+    color:#fff;
+    text-decoration: none;
+    line-height: 40px;
+    text-align: center;
+    font-size: 30px;
+}
+.btns .leftBtn {
+    left: 10px;
+}
+
+.btns .rightBtn {
+    right: 10px;
+}
+.maoni div {
+    position: absolute;
+    -webkit-transition: all .6s linear;
+    transition: all .6s linear;
+}
+#box #wrap ul.common-scroller-controls {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    height: 24px;
+    list-style: none;
+}
+#box #wrap ul.common-scroller-controls li {
+    padding: 9px 5px;
+    float: left;
+}
+#box #wrap ul.common-scroller-controls li.active:after{
+    background-color:#ea7716;
+}
+#box #wrap ul.common-scroller-controls li:after {
+    content: "\020";
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: #d1d1d1;
+}

@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    font-family: "Arial"," Helvetica"," sans-serif","Microsoft YaHei", "SimSun";
+    background: url(../img/bg-base-1.jpg) repeat;
+    position: relative;
+}
+#content{
+    width: 1280px;
+    height: 100%;
+    margin: 50px auto 0;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,0.20);
+    position: relative;
+    z-index: 10;
+}
+/* 头部logo */
+#top{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-top: 4px solid;
+    position: relative;
+   border-color: #ea7716;
+}
+#top #logo {
+    width: 350px;
+    height: 100px;
+    margin: 52px auto 0;
+    overflow: hidden;
+    background: url(../img/logo.png) no-repeat;
+    position: relative; background-color: #ea7716;
+}
+/* 头部logo结束 */
+/* 导航栏开始 */
+#menu {
+    width: 100%;
+    height: 80px;
+    background: url(../img/menu-bg-1.jpg) repeat-x;
+    position: relative;
+}
+#menu .menu-left {
+    float: left;
+    width: 44px;
+    height: 80px;
+    overflow: hidden;
+    background: url(../img/menu-left-right-1.png) no-repeat top left;
+    position: absolute;
+    left: -44px;
+    top: 0;
+}
+#menu .menu-right {
+    float: right;
+    width: 44px;
+    height: 80px;
+    overflow: hidden;
+    margin-right: 44px;
+    background: url(../img/menu-left-right-1.png) no-repeat top right;
+    position: absolute;
+    right: -88px;
+    top: 0;
+}
+#menu ul {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 80px;
+    position: relative;
+}
+#menu ul li {
+    float: left;
+    width: 80px;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 10px;
+    overflow: hidden;
+    position: relative;
+    perspective: 600px; 
+}
+#menu ul a.home {
+    display: block;
+    float: left;
+    width: 59px;
+    height: 60px;
+    overflow: hidden;
+    background: url(../img/home-1.png) no-repeat top left;
+    position: relative;
+}
+#menu ul a.home:hover{
+    background: url(../img/home-1.png) no-repeat right top;
+}
+#menu ul .wutai .prevserve{
+    width:80px;
+    height:60px;
+    position:relative;
+    transform-style: preserve-3d;
+    transition:all 0.3s ease 0s;
+} 
+#menu ul .wutai .prevserve a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    line-height: 60px;
+    /* background-color:red; */
+    text-decoration: none;
+    color:#ea7716;
+}
+#menu ul .wutai .prevserve a:nth-child(1){
+    /* background-color: skyblue; */
+    transform:translateZ(20px);
+}
+#menu ul .wutai .prevserve a:nth-child(2){
+    /* background-color: orange; */
+    transform:rotateX(-90deg) translateZ(20px);
+}
+#menu ul li:hover .prevserve{
+    transform:rotateX(90deg);
+}
+/* 导航结束 */
